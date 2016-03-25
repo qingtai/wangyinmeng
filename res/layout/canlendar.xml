@@ -1,0 +1,185 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    
+
+     <RelativeLayout  
+        android:layout_width="match_parent"  
+        android:layout_height="50dp"  
+        android:background="#449966"  
+         >  
+  
+         <TextView  
+            android:id="@+id/tvCurrentMonth"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_centerInParent="true"  
+            android:layout_centerVertical="true"  
+            android:text="11月"  
+          
+            android:textSize="18sp" />  
+            
+        <ImageButton  
+            android:id="@+id/btnPreMonth"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_centerVertical="true"  
+            android:layout_marginLeft="33dip"  
+            android:layout_toLeftOf="@id/tvCurrentMonth"  
+            android:background="@drawable/left" />  
+  
+        
+        <ImageButton  
+            android:id="@+id/btnNextMonth"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_centerVertical="true"  
+            android:layout_marginRight="33dip" 
+             
+            android:layout_toRightOf="@id/tvCurrentMonth"  
+            android:background="@drawable/right" />  
+  
+        <TextView
+            android:id="@+id/btnClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/btnNextMonth"
+            android:clickable="true"
+            android:text="设置"
+            android:textSize="18sp" />
+        
+    </RelativeLayout>  
+  
+   <LinearLayout  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:layout_marginTop="15dp"  
+        android:orientation="vertical"  
+       >  
+  
+        <TableLayout  
+            android:layout_width="match_parent"  
+            android:layout_height="20dip"  
+            android:layout_marginBottom="2dip"  
+            android:layout_marginTop="2dip" >  
+  
+            <TableRow>  
+  
+                <TextView  
+                    style="@style/dateStyle"  
+                    android:text="日"  
+                    android:textColor="@color/canlendar_text_color" />  
+  
+                <TextView  
+                    style="@style/dateStyle"  
+                    android:text="一"  
+                    android:textColor="@color/canlendar_text_color" />  
+                <TextView  
+                    style="@style/dateStyle"  
+                    android:text="二"  
+                    android:textColor="@color/canlendar_text_color" />  
+  
+                <TextView  
+                    style="@style/dateStyle"  
+                    android:text="三"  
+                    android:textColor="@color/canlendar_text_color" />  
+  
+                <TextView  
+                    style="@style/dateStyle"  
+                    android:text="四"  
+                    android:textColor="@color/canlendar_text_color" />  
+  
+                <TextView  
+                    style="@style/dateStyle"  
+                    android:text="五"  
+                    android:textColor="@color/canlendar_text_color" />  
+  
+                <TextView  
+                    style="@style/dateStyle"  
+                    android:text="六"  
+                    android:textColor="@color/canlendar_text_color" />  
+            </TableRow>  
+        </TableLayout>  
+    </LinearLayout>  
+  
+    <LinearLayout  
+        android:layout_width="match_parent"  
+        android:layout_height="0dp"  
+        android:orientation="vertical"   
+        android:layout_weight="1"  
+        android:layout_marginTop="15dp"
+       >
+
+        
+  
+        <android.support.v4.view.ViewPager  
+            android:id="@+id/vp_calendar"  
+            android:layout_width="match_parent"  
+            android:layout_height="wrap_content"  
+            android:layout_gravity="center"  
+             >  
+        </android.support.v4.view.ViewPager>  
+    </LinearLayout>  
+    
+    <LinearLayout 
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:orientation="vertical"   
+        android:layout_margin="10dp"
+        android:background="@drawable/corners_bg"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shiguanji" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:text="时光机"
+                android:textColor="#000"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="9.10"
+                android:clickable="true"
+                android:hint="持续时间" />
+        </LinearLayout>
+
+       <LinearLayout 
+           android:layout_width="wrap_content"
+           android:layout_height="50dp"
+           android:layout_centerVertical="true"  
+               >
+         <ImageView
+           
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            
+              
+            android:background="@drawable/jinianri" /> 
+         <TextView
+        
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_marginLeft="14dp"
+            android:text="纪念日"
+            android:textSize="22sp"
+             />  
+        </LinearLayout>
+     </LinearLayout>
+     
+</LinearLayout>

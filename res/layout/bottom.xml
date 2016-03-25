@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+ 
+    <RadioGroup
+        android:id="@+id/tab_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backg"
+        android:orientation="horizontal" >
+   <RadioButton
+            android:id="@+id/rili"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/rili"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="2dp"
+            android:text="日历"
+            android:textColor="@color/tab_selector_tv_color" />
+ 
+        <RadioButton
+            android:id="@+id/rbMe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            
+            android:button="@null"
+           
+            android:drawableTop="@drawable/zhidao"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="2dp"
+            android:text="知道"
+            android:textColor="@color/tab_selector_tv_color" />
+      
+      
+        <RadioButton
+            android:id="@+id/rbFind"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            
+            android:button="@null"
+            
+            android:drawableTop="@drawable/shequ"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="2dp"
+            android:text="社区"
+            android:textColor="@color/tab_selector_tv_color" />
+        
+          <RadioButton
+            android:id="@+id/geren"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            
+            android:button="@null"
+        
+            android:drawableTop="@drawable/geren"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="2dp"
+            android:text="个人"
+            android:textColor="@color/tab_selector_tv_color" />
+ 
+ 
+    </RadioGroup>
+    
+</LinearLayout>

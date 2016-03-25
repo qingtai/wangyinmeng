@@ -1,0 +1,61 @@
+
+ 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"  
+    android:orientation="vertical"
+    android:id="@+id/pop_layout" >  
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:background="#449966"> 
+      <TextView  
+            android:id="@+id/abcset"  
+            android:layout_width="0dp"  
+            android:layout_height="wrap_content"  
+            android:layout_weight="1"
+            android:text="取消"  
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textSize="13sp" 
+            android:clickable="true"/>
+      <TextView  
+            
+            android:layout_width="0dp"  
+            android:layout_height="wrap_content"  
+            android:layout_weight="1"
+           
+            android:text="选择日期"  
+            android:textColor="#FFFFFF"
+            
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textSize="13sp" />
+      <TextView  
+            android:id="@+id/abset"  
+            android:layout_width="0dp"  
+            android:layout_height="wrap_content"  
+            android:layout_weight="1"
+            android:layout_centerInParent="true"  
+            android:text="完成"  
+            android:textColor="#FFFFFF"
+            android:clickable="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textSize="13sp" />
+   </LinearLayout>
+    <DatePicker  
+        android:id="@+id/datepicker"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:calendarViewShown="false" />  
+   
+  
+   <TimePicker  
+        android:id="@+id/timepicker"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content" />
+  
+</LinearLayout>
